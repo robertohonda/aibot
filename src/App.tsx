@@ -44,7 +44,7 @@ const App = () => {
       const url =
         "https://api.tts.quest/v3/voicevox/synthesis?" +
         new URLSearchParams({
-          speaker: "0",
+          speaker: "2",
           text: message,
         }).toString();
       const res = await fetch(url);
@@ -83,7 +83,7 @@ const App = () => {
       const url =
         "https://api.tts.quest/v3/voicevox/synthesis?" +
         new URLSearchParams({
-          speaker: "0",
+          speaker: "2",
           text: content,
         }).toString();
       const res = await fetch(url);
