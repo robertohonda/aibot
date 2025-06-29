@@ -1,6 +1,10 @@
 
 # 🗣️ アイ (Ai) - Friendly Japanese Voice Chatbot
 
+🌐 [Live Demo](https://robertohonda.github.io/aibot/)
+
+![Project Screenshot](image.png)
+
 A friendly AI chatbot that speaks Japanese, built with:
 
 - ⚛️ React + Vite  
@@ -40,7 +44,7 @@ A friendly AI chatbot that speaks Japanese, built with:
 1. **Clone this repo**
 
 ```bash
-git clone https://github.com/yourname/ai-chatbot.git
+git clone https://github.com/robertohonda/aibot.git
 cd ai-chatbot
 ```
 
@@ -71,9 +75,9 @@ The chatbot requires a Gemini API key.
 
 ## 🗣️ Voice Input & Output
 
-- User input uses the **Web Speech API** (`SpeechRecognition`)  
+- User input uses the **react-speech-recognition**
 - AI responses are passed to the **VoiceVox API** to generate a streaming MP3  
-- Audio is played below each AI message with a loading spinner
+- Audio is played below each AI message
 
 ---
 
@@ -89,15 +93,8 @@ The AI's personality is defined with this prompt:
 
 ## 🧪 Debug Tools
 
-At the top of the UI, you can see:
+At the bottom of the UI, you can see:
 
 - 🎤 Microphone: On/Off
 - 📝 Live transcript
 - ✅ Finalized transcript
-- 🔑 API Key input
-
----
-
-## 📸 Screenshots
-
-_Add screenshots of the chat interface, debug panel, and voice reply here if desired._

@@ -5,8 +5,9 @@ import SpeechRecognition, {
 } from "react-speech-recognition";
 import Chat from "./Chat";
 import { IChat } from "./interfaces";
-import { CssBaseline, Stack, TextField } from "@mui/material";
+import { CssBaseline, IconButton, InputAdornment, Stack, TextField, Tooltip } from "@mui/material";
 import DebugSection from "./DebugSection";
+import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined"
 
 const prompt =
   "あなたはフレンドリーでやさしい日本語のAIチャットボットです。あなたの名前はアイです。話し方は自然で丁寧すぎない、親しみのある口調（やさしい友達や先輩のように）で会話します。ユーザーの話にしっかり共感し、返事をしたあとは、必ず関連する質問を返して会話を続けてください。オープンな質問で、ユーザーにもっと話してもらえるようにしてください。必ず日本語で答えてください。";
@@ -105,6 +106,24 @@ const App = () => {
           value={geminiKey}
           onChange={(e) => setGeminiKey(e.target.value)}
           required
+          slotProps={{
+            input: {
+              endAdornment: (
+                <InputAdornment position="end">
+                  <Tooltip title="aistudio.google.com/app/apikey からキーを取得してください。">
+                    <IconButton
+                      href="https://aistudio.google.com/app/apikey"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      size="small"
+                    >
+                      <InfoOutlinedIcon />
+                    </IconButton>
+                  </Tooltip>
+                </InputAdornment>
+              ),
+            },
+          }}
         />
         <Chat
           chat={chat}

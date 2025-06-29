@@ -1,7 +1,7 @@
 {
   "name": "gemini-voicevox",
   "version": "7.0.0",
-  "homepage": "https://robertohonda.github.io/resume/",
+  "homepage": "https://robertohonda.github.io/aibot/",
   "private": true,
   "type": "module",
   "scripts": {
