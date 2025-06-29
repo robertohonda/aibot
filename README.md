@@ -3,7 +3,7 @@
 
 🌐 [Live Demo](https://robertohonda.github.io/aibot/)
 
-![Project Screenshot](image.png)
+![Project Video](video.mp4)
 
 A friendly AI chatbot that speaks Japanese, built with:
 
