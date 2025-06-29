@@ -11,7 +11,7 @@ A friendly AI chatbot that speaks Japanese, built with:
 - 🎨 Material UI  
 - 🧠 Gemini (Generative AI by Google)  
 - 🔊 VoiceVox (Text-to-Speech)  
-- 🎤 Voice input using Web Speech API  
+- 🎤 react-speech-recognition
 
 アイ (Ai) talks like a gentle, kind friend — always responds in Japanese and keeps the conversation going with open-ended questions.
 
