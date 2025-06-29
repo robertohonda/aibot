@@ -55,7 +55,7 @@ const App = () => {
       setChat([{ role: "ai", content: message, audio }]);
     };
 
-    // handle();
+    handle();
   }, []);
 
   useEffect(() => {
